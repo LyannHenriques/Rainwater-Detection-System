@@ -3,6 +3,9 @@ Turfs often become inaccessible because of sudden rain. A mechanism is in place 
 
 The rain alarm is an application that detects rainwater and sounds an alarm when it is detected. This thesis describes a simple and reliable sensor module that may be available in the market at low cost. Rain Alarm Project is a simple but very useful project that detects Rain (Rain Water) and automatically triggers an alarm or buzzer. Water is a basic need in every one’s life. Saving water and proper usage of water is very important. Here is a project which will give the alarm when there is rain, so that we can make some actions for rain water harvesting and also save the rain water for using it later. With the help of saving this rain water through rain water harvesting, we can increase the levels of underground water by using underwater recharge techniques.
 
+## System Design
+![sysdes](https://user-images.githubusercontent.com/90440162/235968458-810ffe5e-5e5a-46a1-acf3-d46564bc6eec.png)
+
 ## Circuit Diagram
 ![Screenshot 2023-05-03 204831](https://user-images.githubusercontent.com/90440162/235961165-4f4c10b5-75d1-4d65-852c-05229b25466a.png)
 
