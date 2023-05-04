@@ -1,4 +1,5 @@
 // Defining Blynk Template ID, Name, and Authentication Token
+// Add your own Blynk Credentials here
 #define BLYNK_TEMPLATE_ID ""
 #define BLYNK_TEMPLATE_NAME ""
 #define BLYNK_AUTH_TOKEN ""
@@ -9,6 +10,7 @@
 #include <BlynkSimpleEsp8266.h>
 
 // Initializing Blynk authentication and Wi-Fi credentials
+// Add your own WiFi credentials here
 char auth[] = ""; // Enter your Auth token
 char ssid[] = "";//Enter your WIFI name
 char pass[] = "";//Enter your WIFI password
@@ -43,7 +45,7 @@ void loop()
   // Checking if rain sensor value is below the threshold
   if (sensorValue < RAIN_SENSOR_THRESHOLD) {
     Blynk.logEvent("alert"); // Logging the event in the Blynk app
-    Blynk.virtualWrite(VPIN_BUTTON_2, "Water Level is Above Average !!"); // Writing a message in the Blynk app
+    Blynk.virtualWrite(VPIN_BUTTON_2, "Rainfall has been detected in monitored locations!"); // Writing a message in the Blynk app
     digitalWrite(redLED, HIGH);
     digitalWrite(D3, HIGH);
     tone(buzpin, 100); // Emitting a tone using buzzer
@@ -56,7 +58,7 @@ void loop()
     noTone(buzzpin); // Stopping the tones emitted by the buzzer
     digitalWrite(redLED, LOW);
     digitalWrite(D3, LOW);
-    Blynk.virtualWrite(VPIN_BUTTON_2, "Water Level is Normal"); // Writing a message in the Blynk app
+    Blynk.virtualWrite(VPIN_BUTTON_2, "No rainfall detected"); // Writing a message in the Blynk app
   }
 
   // Sending sensor value to the Blynk app
